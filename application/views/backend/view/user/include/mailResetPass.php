@@ -1,0 +1,2 @@
+Chúc mừng bạn đã khôi phục mật khẩu thành công. Vui lòng kích hoạt tài khoản bằng link bên dưới để xác nhận yêu cầu: <br />
+<a href="<?=base_url()?>admin/user/user_ActiveResetPass/<?=$dataUpdate['resetpasscode']?>"><?=base_url()?>admin/user/user_ActiveResetPass/<?=$dataUpdate['resetpasscode']?></a>

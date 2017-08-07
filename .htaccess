@@ -1,0 +1,14 @@
+RewriteEngine On 
+#chuc nang rewritelink on 
+
+RewriteCond $1 !^(index\.php|statics|robots\.txt) 
+# ^: nhung thu bat dau tu index.php hay statics hay robots
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+# tru nhung file dac biet cua he thong
+# vd: css, js, img
+
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+# rewrite tat ca ve duong dan index.php/*

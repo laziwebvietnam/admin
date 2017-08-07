@@ -1,0 +1,74 @@
+
+.multy-img{
+    padding:5px;
+    background: rgb(242,242,242);
+}
+.multy-img>.img-frame{
+    background: rgb(255,255,255);
+    padding:15px;
+    border:1px solid rgb(230,230,230)
+}
+.multy-img .btn-addnew, .multy-img>.btn-addnew,.multy-img,.multy-img .img-box{    
+    border: 1px solid #FFFFFF;
+    border-color: #D7DDDE #D7DDDE #CACCCC #DFE4E6;
+}
+.multy-img .btn-addnew, .multy-img .img-box{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 95px auto;
+    height: 80px;
+    width: 100px;
+    margin:0 10px 10px 0;
+    position: relative;
+    display: inline-block;
+    cursor: move;
+}
+.multy-img .img-box,.multy-img .img-box .toolbox .btn:hover{
+    box-shadow:0 0 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 3px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow:0 0 3px 0px rgba(0,0,0,0.2);
+    -o-box-shadow:0 0 3px 0px rgba(0,0,0,0.2);
+}
+.multy-img .img-box .toolbox{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top:0;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.multy-img .img-box:hover .toolbox{
+    display:block;
+}
+.multy-img .img-box .toolbox .btn{
+    width: 20px;
+    height:20px;
+    display: inline-block;
+    float: right;
+    margin-left: 5px;
+    cursor:pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+}
+.multy-img .img-box .toolbox .btn.del{
+    background: url('../img/bullet_delete.gif') no-repeat center center #C97474;
+}
+.multy-img .img-box .toolbox .btn.del:hover{
+    background-color: red;
+}
+.multy-img .img-box .toolbox .btn.edit{
+    background-image: url('../img/file-edit.png');
+}
+.multy-img .btn-addnew{
+    cursor: pointer;
+    border-style: dashed;
+    background:url(../img/photo.png) no-repeat center 10px rgb(250,250,250);
+    color: #777;
+    height: 40px;
+    padding-top:40px;
+    text-align: center;
+    vertical-align: central;
+}
