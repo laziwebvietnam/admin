@@ -15,7 +15,7 @@ if ( ! defined('BASEPATH'))
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:81/admin';123123123
+$config['base_url']	= 'http://localhost:81/admin';123123123123123213123
 $config['site_open']=TRUE;
 $config['site_public']=FALSE;
 $config['site_admin_accept_nologin']=FALSE;
