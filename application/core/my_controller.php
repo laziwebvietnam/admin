@@ -137,23 +137,25 @@ class My_controller extends CI_Controller{
         $langs=$this->config->item('allow_langs');
         if(!($lang=$this->uri->segment(1))||!in_array($lang,$langs))        
         {
-            if(!($lang=$this->session->userdata('language'))||!in_array($lang,$langs))
-            {
+            // if(!($lang=$this->session->userdata('language'))||!in_array($lang,$langs))
+            // {
                 $lang=$this->config->item('language');
-            }
+            // }
         }
-        $this->session->set_userdata('language',$lang);
+        // $this->session->set_userdata('language',$lang);
         $this->_config['current_language']=$lang;
         if($lang=='en')
         {
             $this->_lang='en_';
             $this->_config['current_language']='en_';
             $lang='english';
+            $this->_BASE_URL=base_url().'en/';
         }
         else
         {
             $this->_config['current_language']='';
             $this->_lang='';
+            $this->_BASE_URL=base_url();
         }
         //$this->load->library('language');
         $this->config->set_item('language',$lang);

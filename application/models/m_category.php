@@ -114,10 +114,10 @@
             
             
             while($detailCate!=null){
-                $slug = '';
+                $slug = $this->_lang ? 'en/' : '';
                 if($detailCateBiggest!=null){
                     if($detailCateBiggest['id']!=$detailCate['id']){
-                        $slug = $detailCateBiggest[$this->_lang.'alias'].'/';
+                        $slug .= $detailCateBiggest[$this->_lang.'alias'].'/';
                     }
                 }
                 $cateList[] = array(

@@ -24,10 +24,15 @@
     $lang['coupon_expired'] = 'Coupon đã quá hạn';
     $lang['coupon_not_found'] = 'Không tìm thấy coupon';
 
+  $lang['homepage'] = 'Trang chủ';
   $lang['fullname'] = 'Họ tên';
   $lang['phone'] = 'Số điện thoại';
   $lang['email'] = 'E-mail';
   $lang['address'] = 'Địa chỉ';
   $lang['title'] = 'Tiêu đề';
+  $lang['password'] = 'Mật khẩu';
+  $lang['password_confirm'] = 'Mật khẩu Xác nhận';
+  $lang['new_password'] = 'Mật khẩu Mới';
+  $lang['new_password_confirm'] = 'Mật khẩu Mới Xác nhận';
     
 ?>

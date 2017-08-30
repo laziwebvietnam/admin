@@ -300,7 +300,7 @@ class Public_Controller extends My_controller{
         $slug = $slug!=''?$slug:'';
         $breadcrumb[] = array(
             'title'=>lang('homepage'),
-            'alias'=>base_url()
+            'alias'=>$this->_BASE_URL
         );
         $breadcrumbTemp = array();
         if($typePage=='onepage'){
